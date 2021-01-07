@@ -1,0 +1,438 @@
+@media screen and (min-width: 1920px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    background: none;
+  }
+
+  body {
+    height: 1600px;
+    overflow-x: hidden;
+  }
+
+  /* START OF ORDERPAGE DESIGN */
+
+  /* START OF ACCOUNT DIV */
+
+  .account {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background: white;
+  }
+
+  .account #home-btn {
+    position: absolute;
+    left: 2.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    height: 65px;
+    width: 100px;
+    background: gray;
+  }
+
+  .account .search {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 20%;
+    width: 60%;
+  }
+
+  .account .search input,
+  .account .search button {
+    position: absolute;
+    top: 30%;
+    height: 40%;
+    border: none;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(36, 36, 36);
+  }
+
+  .account .search #menu {
+    left: 0;
+    width: 20%;
+    padding-left: 2.5%;
+    cursor: pointer;
+    border-top: 2px rgb(240, 139, 6) solid;
+    border-left: 2px rgb(240, 139, 6) solid;
+    border-bottom: 2px rgb(240, 139, 6) solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .account .search #menu:hover {
+    background-color: rgb(231, 175, 101);
+  }
+
+  .account .search #search-bar {
+    left: 22.5%;
+    width: 67.5%;
+    border-top: 2px rgb(240, 139, 6) solid;
+    border-bottom: 2px rgb(240, 139, 6) solid;
+  }
+
+  .account .search .search-btn {
+    left: 90%;
+    width: 10%;
+    height: 44px;
+    border-top: 2px rgb(240, 139, 6) solid;
+    border-right: 2px rgb(240, 139, 6) solid;
+    border-bottom: 2px rgb(240, 139, 6) solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: url("/assets/pictures/search-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .account .search .search-btn:hover {
+    background: url("/assets/pictures/search-icon-hovered.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .account .sign-in {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 80%;
+    width: 10%;
+  }
+
+  .account .sign-in p,
+  .account .sign-in a {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: rgb(20, 20, 20);
+    left: 10%;
+  }
+
+  .account .sign-in #user {
+    top: 30%;
+    font-size: 12px;
+  }
+
+  .account .sign-in a {
+    top: 45%;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .account .cart {
+    position: absolute;
+    left: 90%;
+    width: 10%;
+    top: 0;
+    height: 100%;
+  }
+
+  .account .cart .cart-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    background: url("/assets/pictures/cart-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .account .cart .cart-image:hover {
+    background: url("/assets/pictures/cart-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .account .cart .items-count {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(240, 139, 6);
+    text-decoration: none;
+  }
+
+  .account .cart .cart-name {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+  }
+
+  /* START OF TOP-NAV DESIGN */
+
+  .top-nav {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 100px;
+    background: rgb(196, 196, 196);
+  }
+
+  .top-nav a {
+    position: absolute;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(20, 20, 20);
+    font-weight: normal;
+    top: 35%;
+  }
+
+  .top-nav a:hover {
+    cursor: pointer;
+    color: rgb(229, 130, 238);
+    text-shadow: 0 0 10px rgb(229, 130, 238);
+    text-shadow: 0 0 10px rgb(229, 130, 238);
+  }
+
+  /* START OF INFO-BAR DESIGN */
+
+  .info-bar {
+    position: absolute;
+    left: 0;
+    top: 190px;
+    height: 500px;
+    width: 100%;
+    background: lightgray;
+  }
+
+  .info-bar .slideshow {
+    width: 1550px;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .info-bar .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* SLIDE GALLERY DESIGN */
+
+  .slideshow-gallery {
+    position: absolute;
+    top: 80%;
+    height: 11%;
+    width: 100%;
+    background: rgb(247, 247, 247, 0.5);
+    z-index: 1;
+  }
+
+  .slideshow-gallery .navigation label {
+    opacity: 0.5;
+  }
+
+  .slideshow-gallery .navigation label:hover {
+    opacity: 1;
+  }
+
+  .navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .bar {
+    margin-top: 0.225%;
+    width: 100px;
+    height: 75px;
+    border: 2px solid white;
+    margin-left: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  label[for="r1"] {
+    background: url("/assets/pictures/home-image-gallery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  label[for="r2"] {
+    background: url("/assets/pictures/cp-image-gallery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  label[for="r3"] {
+    background: url("/assets/pictures/rtw-image-gallery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  label[for="r4"] {
+    background: url("/assets/pictures/ht-image-gallery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  label[for="r5"] {
+    background: url("/assets/pictures/gadgets-image-gallery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  label[for="r6"] {
+    background: url("/assets/pictures/appliances-image-gallery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  label[for="r7"] {
+    background: url("/assets/pictures/others-image-gallery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .slides {
+    width: 700%;
+    height: 100%;
+    display: flex;
+  }
+
+  .slide {
+    width: 14.285%;
+    transition: 0.6s;
+  }
+
+  .slide img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #r1:checked ~ .s1 {
+    margin-left: 0;
+  }
+
+  #r2:checked ~ .s1 {
+    margin-left: -14.285%;
+  }
+
+  #r3:checked ~ .s1 {
+    margin-left: -28.57%;
+  }
+
+  #r4:checked ~ .s1 {
+    margin-left: -42.855%;
+  }
+
+  #r5:checked ~ .s1 {
+    margin-left: -57.14%;
+  }
+
+  #r6:checked ~ .s1 {
+    margin-left: -71.425%;
+  }
+
+  #r7:checked ~ .s1 {
+    margin-left: -85.71%;
+  }
+
+  /* MAIN DIV DESIGN */
+
+  .main-div {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 1250px;
+  }
+
+  p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: rgb(29, 29, 29);
+  }
+
+  .main-div .trending {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 32px;
+  }
+
+  .main-div .most-trend {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 16px;
+    color: rgb(73, 73, 73);
+  }
+
+  .main-div .trend-item-div {
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    background: gray;
+  }
+
+  .main-div #trend-item-1,
+  .main-div #trend-item-2,
+  .main-div #trend-item-3,
+  .main-div #trend-item-4 {
+    top: 15%;
+  }
+
+  .main-div #trend-item-5,
+  .main-div #trend-item-6,
+  .main-div #trend-item-7,
+  .main-div #trend-item-8 {
+    top: 45%;
+  }
+
+  .main-div #trend-item-9,
+  .main-div #trend-item-10,
+  .main-div #trend-item-11,
+  .main-div #trend-item-12 {
+    top: 75%;
+  }
+
+  .main-div .trend-item-div .img-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: rgb(160, 112, 112);
+  }
+}

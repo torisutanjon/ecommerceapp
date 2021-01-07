@@ -1,0 +1,475 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    background: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* START OF TOP NAV */
+
+  .top-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(17, 17, 17);
+  }
+
+  .top-nav .homebtn-div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+  }
+
+  .top-nav .homebtn-div .homebtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    background: red;
+  }
+
+  .top-nav .topnav-links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: rgb(255, 255, 255, 0.75);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+
+  .top-nav .topnav-links:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .top-nav .topnav-links:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0.5px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .top-nav .topnav-links:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+  .top-nav .account-div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 80%;
+    width: 20%;
+  }
+
+  .top-nav .account-div .sign-in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  .top-nav .account-div .sign-in p,
+  .top-nav .account-div .sign-in #userpage-btn {
+    position: absolute;
+    left: 15%;
+    font-size: 12.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: rgb(255, 255, 255, 0.75);
+    text-decoration: none;
+  }
+
+  .top-nav .account-div .sign-in #userpage-btn:hover {
+    cursor: pointer;
+    color: white;
+  }
+
+  .top-nav .account-div .cart {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    width: 50%;
+    background: rgb(212, 212, 212);
+  }
+
+  .top-nav .account-div .cart .cart-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background: url("/assets/pictures/cart-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .top-nav .account-div .cart .cart-image:hover,
+  #items-count:hover #cart-image {
+    background: url("/assets/pictures/cart-image2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .top-nav .account-div .cart .items-count {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .top-nav .account-div .cart .cart-name {
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 12.5px;
+    color: rgb(27, 27, 27);
+  }
+
+  /* START OF SEARCH DIV */
+
+  .search {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 90%;
+    height: 30px;
+    background: rgb(17, 17, 17);
+  }
+
+  .search #search-bar {
+    position: absolute;
+    top: 0;
+    height: 25px;
+    left: 30%;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-bottom: 1px rgb(255, 255, 255, 0.75) solid;
+    background: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12.5px;
+    color: white;
+    font-weight: normal;
+    padding-left: 1%;
+  }
+
+  .search #search-bar:hover {
+    border-bottom: 1px white solid;
+  }
+
+  .search .search-btn {
+    position: absolute;
+    top: 0;
+    left: 72%;
+    height: 26px;
+    width: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 12.5px;
+    color: rgb(255, 255, 255, 0.75);
+    border: 1px rgb(255, 255, 255, 0.75) solid;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .search .search-btn:hover {
+    color: white;
+    border: 1px white solid;
+  }
+
+  .filler {
+    position: absolute;
+    top: 50px;
+    height: 30px;
+    left: 90%;
+    width: 10%;
+    background: rgb(212, 212, 212);
+  }
+
+  /* START OF MENU DESIGN */
+
+  .menu {
+    position: absolute;
+    top: 80px;
+    height: 200px;
+    left: 0;
+    width: 100%;
+    background: rgb(73, 73, 73);
+  }
+
+  .menu .menu-div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 16.67%;
+    cursor: pointer;
+  }
+
+  .menu .menu-div .menu-p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 65%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12.5px;
+    color: white;
+    font-weight: normal;
+  }
+
+  .menu .menu-div #menudiv4 {
+    left: 55%;
+  }
+
+  .menu .menu-div:hover {
+    background: gray;
+  }
+
+  .menu .menu-div img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+    width: 125px;
+    height: 100px;
+  }
+
+  .indicator {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 80%;
+    width: 25px;
+    height: 25px;
+    background: url("/assets/pictures/vdown.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* START OF HIDDEN DIVS */
+
+  .hidden-divs {
+    position: absolute;
+    top: 280px;
+    height: 300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .hidden-divs .hidden-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    transition-delay: 0.5s;
+  }
+
+  .animation_class {
+    animation-name: coverdivanimation;
+    animation-duration: 1s;
+  }
+
+  @keyframes coverdivanimation {
+    0% {
+      top: 580px;
+    }
+    50% {
+      top: 280px;
+    }
+    100% {
+      top: 580px;
+    }
+  }
+
+  .hidden-divs .hidden-div .title {
+    position: absolute;
+    top: 5%;
+    transform: translateX(-50%);
+    left: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgb(48, 48, 48);
+  }
+
+  .productspecs {
+    position: absolute;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(150, 150, 150);
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+  }
+
+  .productspecs:hover {
+    color: black;
+  }
+
+  .productspecs:after {
+    width: 0%;
+    height: 1px;
+    background: #414141;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .productspecs:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+  /* START OF COVER DIV */
+
+  .cover-div {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: gray;
+    transition: 0.6s;
+    z-index: 1;
+  }
+
+  .undercover-div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20%;
+  }
+
+  #undercover-div1 {
+    background: url("/assets/pictures/aircondition_coverdiv.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #undercover-div2 {
+    background: url("/assets/pictures/kitchen_appliances_coverdiv.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #undercover-div3 {
+    background: url("/assets/pictures/home_appliances_coverdiv.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #undercover-div4 {
+    background: url("/assets/pictures/entertainment_appliances_coverid.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #undercover-div5 {
+    background: url("/assets/pictures/cleaning_appliances_coverdiv.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .ontop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(rgb(255, 255, 255, 0.1), rgb(0, 0, 0));
+    transition: 0.5s;
+  }
+
+  .undercover-div:hover .ontop {
+    height: 0%;
+  }
+
+  .undercover-div:hover .undercover-div-p {
+    color: black;
+  }
+
+  .undercover-div-p {
+    position: absolute;
+    color: rgb(236, 236, 236);
+    left: 10%;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  /* START OF BOT NAV DESIGN */
+
+  .bot-nav {
+    position: absolute;
+    top: 680px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: black;
+  }
+
+  .botnavp {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    color: white;
+  }
+

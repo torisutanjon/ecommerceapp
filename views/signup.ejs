@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/styles/signupstyle.css"
+    />
+    <title>Sign Up</title>
+  </head>
+
+  <body onload="isChecked()">
+    <div class="signup-div">
+      <div class="switcher-div">
+        <div class="signuphome-div">
+          <button class="home-btn" onclick="gotohomeHandler()">Home</button>
+        </div>
+        <div class="usertypeP-div">
+          <p class="usertype-p" id="usertypeP">
+            Signing In As User Toggle to Sign In As Admin
+          </p>
+        </div>
+        <div class="switch-div">
+          <label class="switch">
+            <input
+              id="checkSwitcher"
+              type="checkbox"
+              onchange="isChecked()"
+              checked
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="forms-div">
+        <div class="usersignup-div" id="usersignupDiv">
+          <form action="" id="user-form" autocomplete="off">
+            <div class="form-p">
+              <p>User Sign-In</p>
+            </div>
+            <div class="input-outerdiv">
+              <div class="input-innerdiv">
+                <input
+                  type="text"
+                  class="usersignup-input"
+                  id="fname"
+                  placeholder="Enter First Name"
+                />
+                <input
+                  type="text"
+                  class="usersignup-input"
+                  id="mname"
+                  placeholder="Enter Middle Name"
+                />
+                <input
+                  type="text"
+                  class="usersignup-input"
+                  id="lname"
+                  placeholder="Enter Last Name"
+                />
+                <input
+                  type="email"
+                  class="usersignup-input"
+                  id="email"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="input-innerdiv">
+                <input
+                  type="text"
+                  class="usersignup-input"
+                  id=""
+                  placeholder="Enter Contact No."
+                />
+                <input
+                  type="password"
+                  class="usersignup-input"
+                  id="password"
+                  placeholder="Enter Password"
+                />
+                <input
+                  type="password"
+                  class="usersignup-input"
+                  id="conpassword"
+                  placeholder="Confirm Password"
+                />
+              </div>
+            </div>
+            <div class="button-div">
+              <button class="user-btn" id="userbtn-signup">
+                Sign Up New Account
+              </button>
+              <button class="user-btn" id="userbtn-clear">Clear Fields</button>
+            </div>
+          </form>
+        </div>
+        <div class="admin-div" id="adminDiv">
+          <form action="" id="admin-form" autocomplete="off">
+            <div class="form-p">
+              <p>Admin Sign-In</p>
+            </div>
+            <div class="input-outerdiv">
+              <div class="input-innerdiv">
+                <input
+                  type="text"
+                  class="adminsignup-input"
+                  id="fname"
+                  placeholder="Enter First Name"
+                />
+                <input
+                  type="text"
+                  class="adminsignup-input"
+                  id="mname"
+                  placeholder="Enter Middle Name"
+                />
+                <input
+                  type="text"
+                  class="adminsignup-input"
+                  id="lname"
+                  placeholder="Enter Last Name"
+                />
+                <input
+                  type="email"
+                  class="adminsignup-input"
+                  id="email"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="input-innerdiv">
+                <input
+                  type="text"
+                  class="adminsignup-input"
+                  id=""
+                  placeholder="Enter Contact No."
+                />
+                <input
+                  type="password"
+                  class="adminsignup-input"
+                  id="password"
+                  placeholder="Enter Password"
+                />
+                <input
+                  type="password"
+                  class="adminsignup-input"
+                  id="conpassword"
+                  placeholder="Confirm Password"
+                />
+              </div>
+            </div>
+            <div class="button-div">
+              <button class="admin-btn" id="adminbtn-signup">
+                Sign Up New Account
+              </button>
+              <button
+                class="admin-btn"
+                id="adminbtn-clear"
+                onclick="clearFieldHandler()"
+              >
+                Clear Fields
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-div">
+        <p class="footer-p">
+          Already have an account?
+          <a href="/user/login">Click Here</a>
+          to login.
+        </p>
+      </div>
+    </div>
+    <!-- ALL SCRIPTS HERE -->
+    <script>
+      function isChecked() {
+        if (document.getElementById("checkSwitcher").checked === true) {
+          document.getElementById("usersignupDiv").style.zIndex = "1";
+          document.getElementById("adminDiv").style.zIndex = "0";
+          document.getElementById("usertypeP").textContent =
+            "Signing In As User";
+        } else {
+          document.getElementById("usersignupDiv").style.zIndex = "0";
+          document.getElementById("adminDiv").style.zIndex = "1";
+          document.getElementById("usertypeP").textContent =
+            "Signing In As Admin";
+        }
+      }
+      function clearFieldHandler() {
+        document.getElementsByClassName("usersignup-input").textContent = null;
+        document.getElementsByClassName("adminsignup-input").textContent = null;
+      }
+      function gotohomeHandler() {
+        location.href = "/";
+      }
+    </script>
+  </body>
+</html>

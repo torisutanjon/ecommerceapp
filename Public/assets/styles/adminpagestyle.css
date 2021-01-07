@@ -1,0 +1,1043 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+    background: gray;
+    overflow: hidden;
+}
+
+
+/*Start of Top Nav Design*/
+
+.top-nav {
+    position: absolute;
+    left: 15%;
+    top: 0;
+    height: 10%;
+    width: 85%;
+    background: rgb(241, 241, 241);
+    z-index: 1;
+}
+
+.top-nav .top-nav-title {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(102, 93, 233);
+}
+
+.top-nav .admin-container {
+    position: absolute;
+    top: 0;
+    right: 1.5%;
+    height: 100%;
+    width: 15%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.top-nav .admin-container:hover {
+    background: lightblue;
+}
+
+.top-nav .admin-pp {
+    position: absolute;
+    top: 20%;
+    left: 2.5%;
+    height: 50px;
+    width: 50px;
+    background: gray;
+    border-radius: 50%;
+}
+
+.top-nav .admin-name,
+.top-nav .admin-position {
+    position: relative;
+    margin-top: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    left: 30%;
+}
+
+.top-nav .admin-name {
+    color: rgb(36, 36, 36);
+}
+
+.top-nav .admin-position {
+    color: rgb(99, 99, 99);
+}
+
+
+/*START SIDE DIV DESIGN*/
+
+.side-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background: rgb(46, 46, 46);
+    z-index: 1;
+}
+
+.side-div .threelinebtn {
+    position: absolute;
+    top: 2.5%;
+    right: 10%;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.side-div .btndiv-container {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+}
+
+.side-div .btndiv {
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+
+.side-div .btndiv:hover {
+    background: rgb(94, 94, 94);
+    cursor: pointer;
+}
+
+.side-div .btndiv img {
+    position: absolute;
+    top: 22.5%;
+    left: 37.5%;
+    height: 50px;
+    width: 50px;
+}
+
+.side-div .btndiv .title {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+.side-div .btndiv .title p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(243, 243, 243);
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+/*END SIDE DIV DESIGN*/
+
+
+/*START MAIN DIV DESIGN*/
+
+.main-div {
+    scroll-behavior: smooth;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    height: 90%;
+    width: 85%;
+    overflow-y: scroll
+}
+
+.main-div .section {
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+
+.main-div .section-title {
+    position: absolute;
+    top: 0.5%;
+    left: 2.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-div #dashboard {
+    background: rgb(255, 236, 230);
+}
+
+.main-div #administration {
+    background: rgb(230, 255, 232);
+}
+
+.main-div #customer-management {
+    background: rgb(230, 233, 255);
+}
+
+.main-div #store-management {
+    background: rgb(255, 230, 249);
+}
+
+.main-div #pages {
+    background: rgb(255, 255, 230);
+}
+
+.main-div #order-management {
+    background: rgb(216, 214, 214)
+}
+
+.main-div #shipping-management {
+    background: rgb(230, 252, 255);
+}
+
+.main-div #payments {
+    background: rgb(255, 230, 255);
+}
+
+.main-div #seo-management {
+    background: rgb(230, 248, 255);
+}
+
+.main-div #emi {
+    background: rgb(242, 255, 230);
+}
+
+.main-div #discount {
+    background: rgb(230, 255, 232);
+}
+
+.main-div #root-upload {
+    background: rgb(237, 230, 255);
+}
+
+.main-div #tci {
+    background: rgb(250, 255, 230);
+}
+
+
+/*START OF DASHBOARD*/
+
+.main-div #dashboard .product-count,
+.main-div #dashboard .user-count,
+.main-div #dashboard .total-sales {
+    position: absolute;
+    top: 5%;
+    width: 20%;
+    height: 20%;
+    background: rgb(192, 192, 192);
+    box-shadow: 0 0 2.5px black;
+    box-shadow: 0 0 2.5px black;
+}
+
+.main-div #dashboard div .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 39.9%;
+    height: 100%;
+}
+
+.main-div #dashboard div .data {
+    position: absolute;
+    top: 0;
+    left: 40.2%;
+    width: 59.5%;
+    height: 49.9%;
+    text-align: center;
+}
+
+.main-div #dashboard div .data p {
+    color: rgb(243, 243, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.main-div #dashboard div .title {
+    position: absolute;
+    top: 50.1%;
+    left: 40.2%;
+    width: 59.5%;
+    height: 49.9%;
+    text-align: center;
+}
+
+.main-div #dashboard div .title p {
+    color: rgb(243, 243, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 70px;
+}
+
+.main-div #dashboard .product-count div {
+    background: rgba(241, 162, 14, 0.952);
+}
+
+.main-div #dashboard .user-count div {
+    background: rgba(241, 14, 14, 0.952);
+}
+
+.main-div #dashboard .total-sales div {
+    background: rgba(63, 173, 19, 0.952);
+}
+
+.main-div #dashboard .top-product-sales-container,
+.main-div #dashboard .monthly-sales-container,
+.main-div #dashboard .top-sales-container,
+.main-div #dashboard .customer-number-container {
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    background: white;
+    box-shadow: 0 0 2.5px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 2.5px rgb(0, 0, 0, 0.5);
+}
+
+.main-div #dashboard .top-product-sales-container p,
+.main-div #dashboard .monthly-sales-container p,
+.main-div #dashboard .top-sales-container p,
+.main-div #dashboard .customer-number-container p,
+.main-div #dashboard .yearly-revenue-container p {
+    padding-top: 2.5%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-div #dashboard .yearly-revenue-container {
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    width: 43%;
+    height: 62.5%;
+    background: white;
+    box-shadow: 0 0 2.5px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 2.5px rgb(0, 0, 0, 0.5);
+}
+
+
+/* START OF ADMINISTRATION DIV */
+
+.main-div #administration .container {
+    position: absolute;
+    left: 12.5%;
+    top: 17.5%;
+    background: gray;
+    width: 75%;
+    height: 65%;
+}
+
+.main-div #administration .container div {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+}
+
+.main-div #administration .container .users {
+    left: 0;
+    top: 0;
+    background: rgb(206, 41, 228);
+}
+
+.main-div #administration .container .admins {
+    left: 0;
+    top: 50%;
+    background: rgb(218, 218, 37);
+}
+
+.main-div #administration .container .new-archives {
+    left: 50%;
+    top: 0;
+    background: rgb(218, 148, 20);
+}
+
+.main-div #administration .container .old-archives {
+    left: 50%;
+    top: 50%;
+    background: rgb(23, 212, 23);
+}
+
+.main-div #administration .container .users:hover,
+.main-div #administration .container .admins:hover,
+.main-div #administration .container .new-archives:hover,
+.main-div #administration .container .old-archives:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+}
+
+.main-div #administration .container div .title {
+    padding-top: 2.5%;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(26, 26, 26);
+    font-weight: normal;
+}
+
+.main-div #administration .container div .total {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    width: 32%;
+    height: 75%;
+}
+
+.main-div #administration .container div .last-month {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    width: 32%;
+    height: 75%;
+}
+
+.main-div #administration .container div .this-month {
+    position: absolute;
+    top: 20%;
+    left: 67%;
+    width: 32%;
+    height: 75%;
+}
+
+.main-div #administration .container div .total .title,
+.main-div #administration .container div .last-month .title,
+.main-div #administration .container div .this-month .title {
+    text-align: center;
+    padding-top: 2.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(32, 32, 32);
+}
+
+
+/* START OF CUSTOMER MANAGEMENT DIV DESIGN */
+
+.main-div #customer-management .customer-account-div {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    width: 250px;
+    height: 35px;
+    background: rgb(245, 244, 244);
+}
+
+.main-div #customer-management .customer-account-div p {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: rgb(43, 43, 43);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    cursor: default;
+}
+
+
+/* .main-div #customer-management .customer-account-div input {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    width: 35px;
+    cursor: default;
+    height: 80%;
+    padding-left: 2.5%;
+    background: rgb(216, 204, 180);
+}
+
+.main-div #customer-management .customer-tabledata-div {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 80%;
+    width: 90%;
+    background: rgb(255, 255, 255);
+} */
+
+
+/* START OF STORE MANAGEMENT DIV DESIGN */
+
+.main-div #store-management .items-index-div {
+    position: absolute;
+    left: 0;
+    top: 7%;
+    width: 100%;
+    height: 15%;
+    background: lightgray;
+}
+
+.main-div #store-management .items-index-div p {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(44, 44, 44);
+}
+
+.main-div #store-management .items-index-div .overall-p,
+.main-div #store-management .items-index-div .appliances-p,
+.main-div #store-management .items-index-div .gadgets-p,
+.main-div #store-management .items-index-div .cp-p {
+    top: 15%;
+    font-weight: normal;
+}
+
+.main-div #store-management .items-index-div .overall-data-p,
+.main-div #store-management .items-index-div .appliances-data-p,
+.main-div #store-management .items-index-div .gadgets-data-p,
+.main-div #store-management .items-index-div .cp-data-p {
+    top: 15%;
+    font-weight: bold;
+}
+
+.main-div #store-management .items-index-div .ht-p,
+.main-div #store-management .items-index-div .rtw-p,
+.main-div #store-management .items-index-div .others-p {
+    top: 55%;
+    font-weight: normal
+}
+
+.main-div #store-management .items-index-div .ht-data-p,
+.main-div #store-management .items-index-div .rtw-data-p,
+.main-div #store-management .items-index-div .others-data-p {
+    top: 55%;
+    font-weight: bold;
+}
+
+.main-div #store-management .button-div {
+    position: absolute;
+    top: 22.5%;
+    height: 10%;
+    left: 5%;
+    width: 90%;
+}
+
+.main-div #store-management .button-div button {
+    position: absolute;
+    top: 12.5%;
+    height: 75%;
+    width: 12.5%;
+    border: none;
+    outline: none;
+    background-color: rgb(33, 33, 202);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    transition: 0.25s;
+}
+
+.main-div #store-management .button-div button:hover {
+    background: rgb(209, 209, 209);
+    color: blue;
+}
+
+.main-div #store-management .items-datatable-div {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 50%;
+    width: 90%;
+}
+
+.main-div #store-management .items-datatable-div .items-datatable {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    height: 100%;
+    overflow-y: scroll;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    border: none;
+}
+
+.main-div #store-management .items-datatable-div .items-datatable th {
+    border: none;
+    background-color: rgb(37, 37, 37);
+    color: rgb(241, 241, 241);
+    text-align: center;
+    font-weight: normal;
+    padding-left: 1%;
+}
+
+.main-div #store-management .items-datatable-div .items-datatable .quantity,
+.main-div #store-management .items-datatable-div .items-datatable .price {
+    text-align: center;
+}
+
+.main-div #store-management .items-datatable-div .items-datatable td {
+    background-color: white;
+    padding-left: 1%;
+}
+
+.main-div #store-management .items-datatable-div .items-datatable tr:hover {
+    cursor: pointer;
+    background: rgba(245, 245, 245, 0.548);
+}
+
+.main-div #store-management .crud-option-div {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    height: 7.5%;
+}
+
+.main-div #store-management .crud-option-div button {
+    position: absolute;
+    height: 100%;
+    width: 150px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(49, 49, 49);
+    border: none;
+    outline: none;
+    background: rgb(134, 134, 223);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.main-div #store-management .crud-option-div button:hover {
+    background-color: rgba(0, 0, 255, 0.815);
+    color: rgb(235, 233, 233);
+}
+
+.main-div #store-management .crud-option-div button:active {
+    background: rgb(134, 134, 223);
+    color: rgb(49, 49, 49);
+}
+
+
+/* START OF ORDER MANAGEMENT DESIGN DIV */
+
+.main-div #order-management .option-nav {
+    position: absolute;
+    top: 7.5%;
+    width: 100%;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+.main-div #order-management .option-nav input {
+    position: absolute;
+    left: 15%;
+    height: 100%;
+    width: 20%;
+    font-size: 15px;
+    color: rgb(43, 43, 43);
+    border: none;
+    outline: none;
+    padding-left: 1%;
+}
+
+.main-div #order-management .option-nav button {
+    position: absolute;
+    left: 35%;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: url('/assets/pictures/search-btn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.25s;
+}
+
+.main-div #order-management .option-nav button:hover {
+    background: url('/assets/pictures/search-btn-hovered.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-div #order-management .option-nav button:active {
+    background: url('/assets/pictures/search-btn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-div #order-management .option-nav select {
+    position: absolute;
+    left: 60%;
+    height: 100%;
+    width: 12.5%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+
+.main-div #order-management .option-nav select:hover {
+    background: rgb(231, 231, 231);
+}
+
+.main-div #order-management .orders-table-div {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    height: 70%;
+}
+
+.main-div #order-management .orders-table-div .headers {
+    position: absolute;
+    left: 2.5%;
+    top: 0;
+    width: 95%;
+    height: 7.5%;
+    background: rgb(71, 49, 167);
+}
+
+.main-div #order-management .orders-table-div .headers div {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+}
+
+.main-div #order-management .orders-table-div .headers div p {
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(240, 240, 240);
+}
+
+.main-div #order-management .orders-table-div .headers .date button {
+    position: absolute;
+    left: 22.5%;
+    width: 10px;
+    height: 10px;
+    border: none;
+    outline: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.main-div #order-management .orders-table-div .headers .date .new-btn {
+    background: url('/assets/pictures/arrowUp.png');
+}
+
+.main-div #order-management .orders-table-div .headers .date .old-btn {
+    background: url('/assets/pictures/arrowDown.png');
+}
+
+.main-div #order-management .orders-table-div .headers .date .new-btn:hover {
+    background: url('/assets/pictures/arrowUp-hovered.png');
+}
+
+.main-div #order-management .orders-table-div .headers .date .old-btn:hover {
+    background: url('/assets/pictures/arrowDown-hovered.png');
+}
+
+.main-div #order-management .orders-table-div .headers .date .new-btn:active {
+    background: url('/assets/pictures/arrowUp-active.png');
+}
+
+.main-div #order-management .orders-table-div .headers .date .old-btn:active {
+    background: url('/assets/pictures/arrowDown-active.png');
+}
+
+.main-div #order-management .orders-table-div .orders-table {
+    position: absolute;
+    top: 7.5%;
+    left: 2.5%;
+    width: 95%;
+    height: 400px;
+    background: white;
+    display: block;
+    overflow-y: scroll;
+}
+
+.main-div #order-management .orders-table-div .orders-table tr:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.main-div #order-management .orders-table-div .orders-table td {
+    padding-left: 1.5%;
+    width: 310px;
+}
+
+.main-div #order-management .overview-div {
+    position: absolute;
+    bottom: 3.25%;
+    left: 2.5%;
+    width: 95%;
+    height: 15%;
+    background: rgb(20, 20, 211);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.main-div #order-management .overview-div div p {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+.main-div #order-management .overview-div div {
+    position: absolute;
+    height: 100%;
+}
+
+.main-div #order-management .overview-div .order-today-div {
+    left: 15%;
+    width: 100px;
+}
+
+.main-div #order-management .overview-div .tobedelivered-div {
+    left: 35%;
+    width: 117.75px;
+}
+
+.main-div #order-management .overview-div .delivered-div {
+    width: 70px;
+    left: 55%;
+}
+
+.main-div #order-management .overview-div .cancelled-div {
+    width: 128.5px;
+    left: 75%;
+}
+
+.main-div #order-management .overview-div div .order-today,
+.main-div #order-management .overview-div div .tobedelivered,
+.main-div #order-management .overview-div div .delivered-orders,
+.main-div #order-management .overview-div div .cancelled {
+    top: 20%;
+    font-size: 15px;
+}
+
+.main-div #order-management .overview-div div .order-today-data,
+.main-div #order-management .overview-div div .tobedelivered-data,
+.main-div #order-management .overview-div div .delivered-orders-data,
+.main-div #order-management .overview-div div .cancelled-data {
+    bottom: 20%;
+    right: 0;
+    font-size: 25px;
+}
+
+
+/* START OF SHIPPING MANAGEMENT DIV */
+
+.main-div #shipping-management .shipping-list-div {
+    position: absolute;
+    top: 5%;
+    width: 20%;
+    height: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+}
+
+.main-div #shipping-management .shipping-list-div p {
+    margin-top: 5%;
+    font-size: 15px;
+    color: rgb(37, 37, 37);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-div #shipping-management .shipping-list-div {
+    left: 1%;
+    background-color: rgb(136, 136, 206);
+}
+
+.main-div #shipping-management .shipping-list-table-div {
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    width: 98%;
+    height: 80%;
+    transition: 0.5s;
+}
+
+.main-div #shipping-management .shipping-list-table-div .list-options {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    border-top-right-radius: 25px;
+    background: rgb(136, 136, 206);
+}
+
+.main-div #shipping-management .shipping-list-table-div .list-options div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 16.7%;
+    padding-left: 1.5%;
+    margin-top: 1.5%;
+}
+
+.main-div #shipping-management .shipping-list-table-div .list-options div p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.main-div #shipping-management .shipping-list-table-div .shipping-list-table {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 510px;
+    background-color: whitesmoke;
+    display: block;
+    overflow-y: scroll;
+    outline: none;
+}
+
+.main-div #shipping-management .shipping-list-table-div .shipping-list-table tr {
+    outline: none;
+}
+
+.main-div #shipping-management .shipping-list-table-div .shipping-list-table tr:hover {
+    cursor: text;
+    background: gray;
+}
+
+.main-div #shipping-management .shipping-list-table-div .shipping-list-table td {
+    padding-left: 2.5%;
+    width: 220px;
+    cursor: default;
+}
+
+.main-div #shipping-management .shipping-list-table-div .shipping-list-table td:hover {
+    background: lightgray;
+}
+
+
+/* START OF PAYMENT DIV DESIGN */
+
+.main-div #payments .payment-main-div {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    width: 98%;
+    height: 75%;
+    background: rgb(240, 240, 240);
+}
+
+.main-div #payments .payment-main-div .header-div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 12.5%;
+    background: rgb(36, 36, 36);
+}
+
+.main-div #payments .payment-main-div .header-div div {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    padding-left: 2.5%;
+    color: rgb(240, 240, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 17.5px;
+    padding-top: 1.75%;
+}
+
+.main-div #payments .payment-main-div .payment-table {
+    position: absolute;
+    top: 12.5%;
+    left: 0;
+    width: 100%;
+    height: 475px;
+    background: rgb(243, 243, 243);
+    display: block;
+    overflow-y: scroll;
+}
+
+.main-div #payments .payment-main-div .payment-table tr {
+    outline: none;
+}
+
+.main-div #payments .payment-main-div .payment-table tr:hover {
+    background: gray;
+}
+
+.main-div #payments .payment-main-div .payment-table td {
+    cursor: default;
+    width: 310px;
+    padding-left: 2.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(27, 27, 27);
+}
+
+.main-div #payments .payment-main-div .payment-table td:hover {
+    background: lightgray;
+}
+
+
+/* START OF DISCOUNT DIV DESIGN */
+
+.main-div #discount .discount-overview-div {
+    position: absolute;
+    left: 5%;
+    top: 7.5%;
+    width: 15%;
+    height: 15%;
+}
+
+.main-div #discount .discount-overview-div h4 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: rgb(2, 19, 167);
+    font-size: 20px;
+}
+
+.main-div #discount .discount-overview-div h1 {
+    position: absolute;
+    top: 30%;
+    left: 32.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: rgb(2, 19, 167);
+    font-size: 35px;
+}
+
+
+/*END MAIN DIV DESIGN*/

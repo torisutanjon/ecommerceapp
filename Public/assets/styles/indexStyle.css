@@ -1,0 +1,267 @@
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: rgb(255, 255, 255);
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 7%;
+  }
+  .topnav-container {
+    position: relative;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .topnav-container a,
+  .topnav-container button {
+    position: relative;
+    width: 15%;
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.3s;
+  }
+  .topnav-container a:hover {
+    background-color: black;
+    color: white;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .topnav-container button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(22, 22, 22);
+    color: white;
+  }
+  .topnav-container button:hover {
+    background: gray;
+  }
+  section {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    height: 800px;
+    float: left;
+  }
+
+  #home {
+    padding-top: 7.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #aboutus {
+    background: url("/assets/pictures/aboutUs.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #contact {
+    background: url("/assets/pictures/contactUS.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #copyright {
+    background: black;
+  }
+
+  /*home section design*/
+
+  #messageDiv {
+    margin-top: 15%;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: #aaaaaa;
+  }
+
+  #messageDiv button {
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 20px;
+  }
+
+  .business-name,
+  .tag-line,
+  .W {
+    position: absolute;
+    color: rgb(199, 199, 199);
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .business-name {
+    top: 40%;
+    left: 35%;
+    font-size: 72px;
+  }
+
+  .tag-line {
+    top: 60%;
+    left: 30%;
+    font-size: 26px;
+  }
+
+  .W {
+    top: 65%;
+    left: 45%;
+    font-size: 26px;
+  }
+
+  /*about us design*/
+
+  #aboutus .aboutus-container {
+    position: relative;
+    top: 150px;
+    left: 5%;
+    height: 550px;
+    width: 90%;
+    background: transparent;
+  }
+
+  #aboutus .aboutus-container div {
+    position: absolute;
+    top: 5%;
+    width: 30%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #aboutus .aboutus-container p {
+    padding: 25px 25px 25px 25px;
+    color: rgb(224, 224, 224);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #aboutus .aboutus-container .title {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 0px;
+  }
+
+  #aboutus .aboutus-container .content {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-justify: inter-word;
+    word-spacing: 1px;
+  }
+
+  #aboutus .aboutus-container .aboutus-1 {
+    left: 2.5%;
+  }
+
+  #aboutus .aboutus-container .aboutus-2 {
+    left: 35%;
+  }
+
+  #aboutus .aboutus-container .aboutus-3 {
+    left: 67.5%;
+  }
+
+  /*contact us design*/
+
+  #contact div {
+    position: relative;
+    color: rgb(228, 228, 228);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+
+  #contact .google p {
+    position: absolute;
+    margin-top: 20%;
+    left: 10%;
+  }
+
+  #contact .yahoo p {
+    position: absolute;
+    margin-top: 20%;
+    left: 40%;
+  }
+
+  #contact .facebook p {
+    position: absolute;
+    margin-top: 20%;
+    left: 70%;
+  }
+
+  #contact .contact p {
+    position: absolute;
+    margin-top: 35%;
+    left: 10%;
+  }
+
+  #contact .tel-no p {
+    position: absolute;
+    margin-top: 35%;
+    left: 40%;
+  }
+
+  /*copyright design*/
+
+  #copyright #label {
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 50px;
+    padding-bottom: 100px;
+  }
+
+  #copyright textarea {
+    background: black;
+    margin-left: 30%;
+    border: 2px solid rgb(170, 170, 0);
+    text-align: center;
+    text-align: justify;
+    height: 450px;
+    width: 625px;
+    padding: 35px;
+    word-spacing: 10px;
+    color: white;
+    font-size: 25px;
+    line-height: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+

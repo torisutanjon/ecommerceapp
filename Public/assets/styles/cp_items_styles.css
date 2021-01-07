@@ -1,0 +1,401 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* START OF TOPNAV DESIGN */
+
+  .topnav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 125px;
+  }
+
+  a {
+    position: absolute;
+  }
+
+  p,
+  a,
+  input,
+  button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+  }
+
+  #home-btn {
+    top: 5%;
+    left: 2.5%;
+    height: 65px;
+    width: 85px;
+    background: orange;
+  }
+
+  #category-btn {
+    position: absolute;
+    left: 3.75%;
+    top: 65%;
+    height: 35px;
+    width: 45px;
+    cursor: pointer;
+  }
+
+  .anchor_div {
+    position: absolute;
+    top: 35%;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  #anchor_div1 {
+    left: 7.5%;
+  }
+
+  #anchor_div2 {
+    left: 17.5%;
+  }
+
+  #anchor_div3 {
+    left: 27.5%;
+  }
+
+  .anchor_div a {
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: 0.5s;
+    font-size: 14px;
+  }
+
+  #anchor_div3 a {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 17.5%;
+  }
+
+  .anchor_div:hover {
+    background: rgb(41, 41, 41);
+  }
+
+  .anchor_div:hover a {
+    color: rgb(233, 233, 233);
+  }
+
+  #search-bar {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0, 0.25);
+    height: 35px;
+    width: 450px;
+    font-size: 12px;
+    padding-left: 2.5px;
+    border-radius: 10px;
+  }
+
+  #search-bar:hover,
+  #search-bar:focus {
+    border: 2px solid black;
+  }
+
+  #search-btn {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 37.5px;
+    width: 100px;
+    left: 65%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    color: gray;
+    transition: 1s;
+  }
+
+  #search-btn:hover {
+    background: rgb(182, 182, 182);
+  }
+
+  #cart-div {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 20%;
+    height: 100%;
+  }
+
+  #cart-image {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    height: 75px;
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #item-total-count {
+    position: absolute;
+    font-size: 20px;
+    color: orange;
+    top: 45%;
+    left: 30%;
+  }
+
+  #currency-sign {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 40%;
+    height: 30px;
+    width: 30px;
+    background: gray;
+  }
+
+  #item-total-price {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 55%;
+    font-size: 25px;
+  }
+
+  /* START OF SIDE BAR DESIGN */
+
+  .side-bar {
+    position: absolute;
+    top: 150px;
+    left: 1%;
+    height: 80%;
+    width: 250px;
+    overflow-y: scroll;
+    transition: 0.5s;
+  }
+
+  .category_div {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 40px;
+    width: 95%;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .category_div:hover {
+    background: rgb(41, 41, 41);
+    color: rgb(233, 233, 233);
+  }
+
+  .category_p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+  }
+
+  /* START OF MAIN DIV DESIGN  */
+
+  .main-div {
+    position: absolute;
+    top: 150px;
+    left: 275px;
+    height: 75%;
+    width: 82.5%;
+    display: block;
+    overflow-y: scroll;
+    transition: 0.5s;
+  }
+
+  .item-div {
+    position: relative;
+    left: 2.5%;
+    width: 95%;
+    height: 125px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgb(179, 179, 179);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: white;
+  }
+
+  .item-div:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(4, 55, 165);
+  }
+
+  .image-name {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 5%;
+    top: 50%;
+    height: 110px;
+    width: 200px;
+    background: gray;
+  }
+
+  /*
+    .image-name:hover{
+       bermor style item image hover
+    }
+    */
+
+  p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+  }
+
+  .item-category {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+  }
+
+  .item-name {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+  }
+
+  .item-price {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    font-size: 13px;
+    color: rgb(107, 106, 106);
+  }
+
+  .item-discounted-price {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    font-size: 15px;
+    color: rgb(78, 78, 78);
+  }
+
+  .cart-btn {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 85%;
+    height: 35px;
+    width: 100px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  /* HIDDEN DIV DESIGN STARTS HERE */
+
+  .clickedDiv {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    height: 60%;
+    width: 70%;
+    box-shadow: 0 0 10px rgb(102, 102, 102);
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    transition: 0.5s;
+    display: none;
+    background: white;
+  }
+
+  #closebtn {
+    position: absolute;
+    top: 2.5%;
+    right: 1%;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .clicked_div_image {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 1%;
+    background: gray;
+    height: 95%;
+    width: 60%;
+  }
+
+  .clicked_div_item_category {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+  }
+
+  .clicked_div_item_name {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+  }
+
+  .clicked_div_item_price {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+  }
+
+  .clicked_div_discounted_price {
+    position: absolute;
+    top: 55%;
+    left: 65%;
+  }
+
+  .clicked_div_btn {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    height: 40px;
+    width: 125px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: rgb(176, 226, 226);
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    transition: 0.4s;
+  }
+
+  .clicked_div_btn:hover {
+    background: rgb(105, 199, 199);
+    color: white;
+  }
+

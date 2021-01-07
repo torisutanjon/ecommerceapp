@@ -1,0 +1,457 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    background: none;
+  }
+
+  body {
+    width: 100%;
+    height: 2800px;
+    overflow-x: hidden;
+    background: white;
+  }
+
+  /* START OF ACCOUNT DIV DESIGN */
+
+  .account {
+    position: absolute;
+    top: 0;
+    height: 150px;
+    left: 0;
+    width: 100%;
+    background: white;
+  }
+
+  .account #home-btn {
+    position: absolute;
+    top: 25%;
+    left: 2.5%;
+    width: 100px;
+    height: 50%;
+    background: gray;
+  }
+
+  .account .search {
+    position: absolute;
+    top: 25%;
+    height: 50%;
+    left: 400px;
+    width: 50%;
+    background: none;
+  }
+
+  .account .search #search-bar {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 50%;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 1px rgb(182, 182, 182) solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(20, 20, 20);
+    font-weight: normal;
+    padding-left: 2.5%;
+  }
+
+  .account .search #search-bar:hover::placeholder {
+    font-weight: bold;
+  }
+
+  .account .search .search-btn {
+    position: absolute;
+    top: 27%;
+    height: 50%;
+    left: 83%;
+    width: 10%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: blue;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    transition: 1s;
+  }
+
+  .account .search .search-btn:hover {
+    font-weight: bold;
+    background: darkblue;
+    border-radius: 15px;
+  }
+
+  .account .sign-in {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12.5px;
+    font-weight: normal;
+    color: rgb(20, 20, 20);
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .account .cart {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 89%;
+    width: 10%;
+    background: none;
+    cursor: pointer;
+  }
+
+  .account .cart #cart-image {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+  }
+
+  .account .cart .items-count {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(20, 20, 20);
+    color: blue;
+    text-decoration: none;
+  }
+
+  .account .cart .cart-name {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 12.5px;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+  }
+  #cart-image {
+    background: url("/assets/pictures/cart-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .account .cart #cart-image:hover {
+    background: url("/assets/pictures/cart-image2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* START OPF TOP-NAV DIV DESIGN */
+
+  .top-nav {
+    position: absolute;
+    top: 150px;
+    height: 50px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      rgba(108, 111, 240, 0.5),
+      rgba(124, 124, 192, 0.5),
+      rgba(108, 111, 240, 0.5)
+    );
+  }
+
+  .top-nav a {
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 12.5px;
+    color: rgb(94, 94, 94);
+    cursor: pointer;
+  }
+
+  .top-nav a:hover {
+    font-weight: bold;
+  }
+
+  .top-nav .line {
+    position: absolute;
+    top: 25%;
+    height: 50%;
+    background: none;
+    border-right: 1px solid rgba(30, 30, 30, 0.5);
+  }
+
+  /* START OF TOOLS CLASS DESIGN */
+
+  .tools {
+    position: absolute;
+    top: 250px;
+    height: 125px;
+    left: 0;
+    width: 100%;
+  }
+
+  .tools .tools-btn {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 15px;
+  }
+
+  .tools .tools-btn:hover {
+    background: rgb(75, 75, 224);
+  }
+
+  .tools .tools-btn img {
+    position: absolute;
+    top: 10%;
+    height: 75px;
+    left: 37.5px;
+    width: 75px;
+    border-radius: 15px;
+  }
+
+  .tools .tools-btn .tools-category {
+    position: absolute;
+    top: 75%;
+    font-size: 12.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: rgb(119, 119, 119);
+    transition: 1s;
+  }
+
+  #power-tools-btn:hover #power-tools-category,
+  #hand-tools-btn:hover #hand-tools-category,
+  #power-tools-accesories:hover #power-tools-accessories-category,
+  #hand-tools-accesories:hover #hand-tools-accessories-category,
+  #kitchenwares:hover #kitchenwares-category {
+    color: white;
+  }
+
+  /* START OF SLIDER DIV */
+
+  .info-bar {
+    position: absolute;
+    top: 400px;
+    height: 400px;
+    left: 0;
+    width: 100%;
+    background: gray;
+  }
+
+  .info-bar .slideshow {
+    width: 1550px;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .info-bar .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* SLIDE GALLERY DESIGN */
+
+  .slideshow-gallery {
+    position: absolute;
+    top: 780px;
+    height: 11%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .slideshow-gallery .navigation #g1 {
+    opacity: 1;
+  }
+
+  .navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .bar {
+    width: 50px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #ffffff;
+    margin-left: 6px;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+
+  #g1 {
+    background: #ffffff;
+  }
+
+  /* .bar:hover {
+      background-color: #ffffff;
+  } */
+
+  input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+  }
+
+  .slide {
+    width: 33.333%;
+    transition: 0.6s;
+  }
+
+  .slide img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #r1:checked ~ .s1 {
+    margin-left: 0;
+  }
+
+  #r2:checked ~ .s1 {
+    margin-left: -33.333%;
+  }
+
+  #r3:checked ~ .s1 {
+    margin-left: -66.666%;
+  }
+
+  /* START OF MAIN DIV DESIGN */
+
+  .main-div {
+    position: absolute;
+    top: 850px;
+    height: 2000px;
+    left: 0;
+    width: 100%;
+    background: rgb(219, 219, 219);
+  }
+
+  .main-div .best-sellers {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: rgb(235, 235, 235);
+  }
+
+  .bestseller-title {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: rgb(94, 94, 94);
+  }
+
+  .showall {
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+  }
+
+  .showall:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: blue;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0px;
+  }
+
+  .showall:hover:after {
+    width: 75%;
+    left: 12.5%;
+  }
+
+  .best-tool-image {
+    position: absolute;
+    top: 7.5%;
+    left: 10%;
+    height: 50%;
+    width: 80%;
+    background: gray;
+  }
+
+  .best-tool-name {
+    position: absolute;
+    left: 10%;
+    top: 62.5%;
+    font-size: 12px;
+    color: darkgray;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .best-tool-price {
+    position: absolute;
+    top: 82.5%;
+    left: 10%;
+    font-size: 20px;
+    color: black;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .best-tools {
+    position: absolute;
+    top: 20%;
+    height: 75%;
+    width: 15%;
+    background: white;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .advertisement {
+    position: absolute;
+    top: 1500px;
+    height: 300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .final-info {
+    position: absolute;
+    top: 1800px;
+    height: 200px;
+    left: 0;
+    width: 100%;
+  }
+

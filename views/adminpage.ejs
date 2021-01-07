@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/adminpagestyle.css">
+    <script src="/assets/scripts/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(() => {
+            $('#dashboard-btn').click(() => {
+                location.href = '#dashboard'
+            })
+            $('#administration-btn').click(() => {
+                location.href = '#administration'
+            })
+            $('#customer-management-btn').click(() => {
+                location.href = '#customer-management'
+            })
+            $('#store-management-btn').click(() => {
+                location.href = '#store-management'
+            })
+            $('#pages-btn').click(() => {
+                location.href = '#pages'
+            })
+            $('#order-management-btn').click(() => {
+                location.href = '#order-management'
+            })
+            $('#shipping-management-btn').click(() => {
+                location.href = '#shipping-management'
+            })
+            $('#payments-btn').click(() => {
+                location.href = '#payments'
+            })
+            $('#seo-management-btn').click(() => {
+                location.href = '#seo-management'
+            })
+            $('#emi-btn').click(() => {
+                location.href = '#emi'
+            })
+            $('#discount-btn').click(() => {
+                location.href = '#discount'
+            })
+            $('#root-upload-btn').click(() => {
+                location.href = '#root-upload'
+            })
+            $('#tci-btn').click(() => {
+                location.href = '#tci'
+            })
+        })
+    </script>
+    <title>Admin Page</title>
+</head>
+
+<body>
+    <div class="top-nav">
+        <p class="top-nav-title">E-Commerce</p>
+        <div class="admin-container">
+            <img src="" alt="Icon Here" class="admin-pp">
+            <p class="admin-name">Tristan</p>
+            <p class="admin-position">Administrator</p>
+        </div>
+    </div>
+    <div class="side-div">
+        <div class="threelinebtn">
+
+        </div>
+        <div class="btndiv-container">
+            <div class="btndiv" id="dashboard-btn">
+                <img src="/assets/pictures/dashboard.png" alt="icon here">
+                <div class="title">
+                    <p>Dashboard</p>
+                </div>
+            </div>
+            <div class="btndiv" id="administration-btn">
+                <img src="/assets/pictures/administration.png" alt="icon here">
+                <div class="title">
+                    <p>Administration</p>
+                </div>
+
+            </div>
+            <!-- <div class="btndiv" id="customer-management-btn">
+                <img src="/assets/pictures/customerManagement.png" alt="icon here">
+                <div class="title">
+                    <p>Customer Management</p>
+                </div>
+            </div> -->
+            <div class="btndiv" id="store-management-btn">
+                <img src="/assets/pictures/storeManagement.png" alt="icon here">
+                <div class="title">
+                    <p>Store Management</p>
+                </div>
+            </div>
+            <div class="btndiv" id="pages-btn">
+                <img src="/assets/pictures/pages.png" alt="icon here">
+                <div class="title">
+                    <p>Pages</p>
+                </div>
+            </div>
+            <div class="btndiv" id="order-management-btn">
+                <img src="/assets/pictures/orderManagement.png" alt="icon here">
+                <div class="title">
+                    <p>Order Management</p>
+                </div>
+            </div>
+            <div class="btndiv" id="shipping-management-btn">
+                <img src="/assets/pictures/shippingManagement.png" alt="icon here">
+                <div class="title">
+                    <p>Shipping Management</p>
+                </div>
+            </div>
+            <div class="btndiv" id="payments-btn">
+                <img src="/assets/pictures/payments.png" alt="icon here">
+                <div class="title">
+                    <p>Payments</p>
+                </div>
+            </div>
+            <div class="btndiv" id="seo-management-btn">
+                <img src="/assets/pictures/seo.png" alt="icon here">
+                <div class="title">
+                    <p>SEO</p>
+                </div>
+            </div>
+            <div class="btndiv" id="emi-btn">
+                <img src="/assets/pictures/emi.png" alt="icon here">
+                <div class="title">
+                    <p>Email Marketing Integration</p>
+                </div>
+            </div>
+            <div class="btndiv" id="discount-btn">
+                <img src="/assets/pictures/discount.png" alt="icon here">
+                <div class="title">
+                    <p>Discount</p>
+                </div>
+            </div>
+            <div class="btndiv" id="root-upload-btn">
+                <img src="/assets/pictures/rootFileUpload.png" alt="icon here">
+                <div class="title">
+                    <p>root-upload</p>
+                </div>
+            </div>
+            <div class="btndiv" id="tci-btn">
+                <img src="/assets/pictures/tci.png" alt="icon here">
+                <div class="title">
+                    <p>Tracking Code Integration</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-div">
+        <!---Start of Dashboard div--->
+        <div class="section" id="dashboard">
+            <p class="section-title">Dashboard</p>
+            <div class="product-count" style="left: 10%;">
+                <div class="icon"></div>
+                <div class="data">
+                    <p>123</p>
+                </div>
+                <div class="title">
+                    <p>PRODUCTS</p>
+                </div>
+            </div>
+            <div class="user-count" style="left: 40%;">
+                <div class="icon"></div>
+                <div class="data">
+                    <p>123</p>
+                </div>
+                <div class="title">
+                    <p>USERS</p>
+                </div>
+
+            </div>
+            <div class="total-sales" style="left: 70%;">
+                <div class="icon"></div>
+                <div class="data">
+                    <p>123123</p>
+                </div>
+                <div class="title">
+                    <p>TOTAL SALES</p>
+                </div>
+
+            </div>
+            <div class="yearly-revenue-container">
+                <p style="text-align: center;"> YEARLY REVENUE</p>
+            </div>
+            <div class="top-product-sales-container" style="left: 1%; top: 30%;">
+                <p style="text-align: center;">TOP MONTHLY SALES</p>
+            </div>
+            <div class="monthly-sales-container" style="left: 1%; top: 62.5%;">
+                <p style="text-align: center;">MONTHLY SALES</p>
+            </div>
+            <div class="top-sales-container" style="left: 27.5%; top: 30%;">
+                <p style="text-align: center;">TOP SALES</p>
+            </div>
+            <div class="customer-number-container" style="left: 27.5%; top: 62.5%;">
+                <p style="text-align: center;">MONTHLY CUSTOMERS NUMBER</p>
+            </div>
+        </div>
+        <!---Start of administration div--->
+        <div class="section" id="administration">
+            <p class="section-title">Administration</p>
+            <div class="container">
+                <div class="users" title="Click to View Users">
+                    <p class="title">USERS</p>
+                    <div class="total">
+                        <p class="title">TOTAL</p>
+                    </div>
+                    <div class="last-month">
+                        <p class="title">LAST MONTH</p>
+                    </div>
+                    <div class="this-month">
+                        <p class="title">THIS MONTH</p>
+                    </div>
+                </div>
+                <div class="admins" title="Click to View Admins">
+                    <p class="title">ADMINS</p>
+                    <div class="total">
+                        <p class="title">TOTAL</p>
+                    </div>
+                    <div class="last-month">
+                        <p class="title">LAST MONTH</p>
+                    </div>
+                    <div class="this-month">
+                        <p class="title">THIS MONTH</p>
+                    </div>
+                </div>
+                <div class="new-archives" title="Click to View New Archives">
+                    <p class="title">NEW ARCHIVES</p>
+                    <div class="total">
+                        <p class="title">TOTAL</p>
+                    </div>
+                    <div class="last-month">
+                        <p class="title">LAST MONTH</p>
+                    </div>
+                    <div class="this-month">
+                        <p class="title">THIS MONTH</p>
+                    </div>
+                </div>
+                <div class="old-archives" title="Click to View Old Archives">
+                    <p class="title">OLD ARCHIVES</p>
+                    <div class="total">
+                        <p class="title">TOTAL</p>
+                    </div>
+                    <div class="last-month">
+                        <p class="title">THIS MONTH</p>
+                    </div>
+                    <div class="this-month">
+                        <p class="title">THIS MONTH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Start of store-management div--->
+        <div class="section" id="store-management">
+            <p class="section-title">Store Management</p>
+            <div class="items-index-div">
+                <p class="overall-p" style="left:5%">Overall : </p>
+                <p class="overall-data-p" style="left:11%"> 738 </p>
+
+                <p class="appliances-p" style="left:25%">Appliances : </p>
+                <p class="appliances-data-p" style="left:33%"> 123 </p>
+
+                <p class="gadgets-p" style="left:45%">Gadgets : </p>
+                <p class="gadgets-data-p" style="left:51.5%"> 123 </p>
+
+                <p class="cp-p" style="left:65%">Computer Parts : </p>
+                <p class="cp-data-p" style="left:76%"> 123 </p>
+
+                <p class="ht-p" style="left:25%">Hand Tools : </p>
+                <p class="ht-data-p" style="left:33%"> 123 </p>
+
+                <p class="rtw-p" style="left:45%">Ready to Wear : </p>
+                <p class="rtw-data-p" style="left:55%"> 123 </p>
+
+                <p class="others-p" style="left:65%">Others : </p>
+                <p class="others-data-p" style="left: 71%;"> 123 </p>
+            </div>
+            <div class="button-div">
+                <button class="appliances-btn" style="left: 5%;">Appliances</button>
+                <button class="gadgets-btn" style="left: 20%;">Gadgets</button>
+                <button class="cp-btn" style="left: 35%;">Computer Parts</button>
+                <button class="ht-btn" style="left: 50%;">Hand Tools</button>
+                <button class="rtw-btn" style="left: 65%;">RTW</button>
+                <button class="others-btn" style="left: 80%;">Others</button>
+            </div>
+            <div class="items-datatable-div">
+                <table class="items-datatable" CELLSPACING=0>
+                    <tr class="headers">
+                        <th style="text-align: left; width: 225px; height: 75px;">Item Name</th>
+                        <th style="text-align: left; width: 225px; height: 75px;">Item Type</th>
+                        <th style="text-align: left; width: 225px; height: 75px;">Item Brand</th>
+                        <th style=" width: 225px; height: 75px;">Item Price</th>
+                        <th style=" width: 225px; height: 75px;">Item Quantity</th>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;" class="quantity">asd</td>
+                        <td style="height: 50px;" class="price">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;" class="quantity">asd</td>
+                        <td style="height: 50px;" class="price">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;" class="quantity">asd</td>
+                        <td style="height: 50px;" class="price">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;" class="quantity">asd</td>
+                        <td style="height: 50px;" class="price">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;" class="quantity">asd</td>
+                        <td style="height: 50px;" class="price">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;" class="quantity">asd</td>
+                        <td style="height: 50px;" class="price">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;" class="quantity">asd</td>
+                        <td style="height: 50px;" class="price">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;" class="quantity">asd</td>
+                        <td style="height: 50px;" class="price">asd</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="crud-option-div">
+                <button class="create-btn" style="left: 12.5%;">New Item</button>
+                <button class="update-btn" style="left: 42.5%;">Update Table</button>
+                <button class="delete-btn" style="left: 72.5%;">Delete Item</button>
+            </div>
+        </div>
+        <!---Start of pages div--->
+        <div class="section" id="pages">pages
+
+        </div>
+        <!---Start of order-management div--->
+        <div class="section" id="order-management">
+            <p class="section-title">Order Management</p>
+            <div class="option-nav">
+                <input type="text" id="quicksearch" placeholder="Quick Search">
+                <button class="quick-search-btn"></button>
+                <select name="search-category" id="-search-category">
+                    <option value="all">All</option>
+                    <option value="new_orders">New Orders</option>
+                    <option value="old_0rders">Old Orders</option>
+                </select>
+            </div>
+            <div class="orders-table-div">
+                <div class="headers">
+                    <div class="userid-div" style="left: 0;">
+                        <p>User ID</p>
+                    </div>
+                    <div class="username-div" style="left: 20%;">
+                        <p>Username</p>
+                    </div>
+                    <div class="status" style="left: 40%;">
+                        <p>Status</p>
+                    </div>
+                    <div class="courier" style="left: 60%;">
+                        <p>Courier</p>
+                    </div>
+                    <div class="date" style="left: 80%;">
+                        <p>Date</p>
+                        <button class="new-btn" title="View Newest FIrst" style=" top: 20%;"></button>
+                        <button class="old-btn" title="View Oldest First" style=" top: 60%;"></button>
+                    </div>
+                </div>
+                <table class="orders-table" CELLSPACING=0>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr title="Click to View">
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="overview-div">
+                <div class="order-today-div">
+                    <p class="order-today">Orders Today</p>
+                    <p class="order-today-data">123</p>
+                </div>
+                <div class="tobedelivered-div">
+                    <p class="tobedelivered">To Be Delivered</p>
+                    <p class="tobedelivered-data">123</p>
+                </div>
+                <div class="delivered-div">
+                    <p class="delivered-orders">Delivered</p>
+                    <p class="delivered-orders-data">123</p>
+                </div>
+                <div class="cancelled-div">
+                    <p class="cancelled">Cancelled Orders</p>
+                    <p class="cancelled-data">123</p>
+                </div>
+            </div>
+        </div>
+        <!---Start of shipping-management div--->
+        <div class="section" id="shipping-management">
+            <p class="section-title">Shipping Management</p>
+            <div class="shipping-list-div">
+                <p>Shipping List</p>
+            </div>
+
+            <div class="shipping-list-table-div">
+                <div class="list-options">
+                    <div class="userid" style="left: 0;">
+                        <p>USER ID</p>
+                    </div>
+                    <div class="username" style="left: 16.7%;">
+                        <p>USERNAME</p>
+                    </div>
+                    <div class="courier" style="left: 33.4%;">
+                        <p>COURIER</p>
+                    </div>
+                    <div class="information" style="left: 51.0%;">
+                        <p>INFORMATION</p>
+                    </div>
+                    <div class="confirmation" style="left: 66.8%;">
+                        <p>CONFIRMATION</p>
+                    </div>
+                    <div class="ETA" style="left: 83.5%;">
+                        <p>ETA</p>
+                    </div>
+                </div>
+                <table class="shipping-list-table" CELLSPACING=0>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!---Start of payments div--->
+        <div class="section" id="payments">
+            <p class="section-title">Payments</p>
+            <div class="payment-main-div">
+                <div class="header-div">
+                    <div class="userid" style="left: 0;">User ID</div>
+                    <div class="username" style="left: 20%;">User Name</div>
+                    <div class="amount-ordered" style="left: 40%;">Amount Ordered</div>
+                    <div class="typeofpayment" style="left: 60%;">Type Of Payment</div>
+                    <div class="paid" style="left: 80%;">Paid ?</div>
+                </div>
+                <table class="payment-table" CELLSPACING=0>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                        <td style="height: 50px;">asd</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!---Start of seo-management div--->
+        <div class="section" id="seo-management">seo-management
+
+        </div>
+        <!---Start of emi div--->
+        <div class="section" id="emi">emi
+
+        </div>
+        <!---Start of discount div--->
+        <div class="section" id="discount">
+            <p class="section-title">Discount</p>
+            <div class="discount-overview-div">
+                <h4>Discounted Items</h4>
+                <h1>123</h1>
+            </div>
+        </div>
+        <!---Start of root-upload div--->
+        <div class="section" id="root-upload">root-upload
+
+        </div>
+        <!---Start of tci div--->
+        <div class="section" id="tci">tci
+
+        </div>
+    </div>
+</body>
+
+</html>

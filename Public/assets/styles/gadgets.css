@@ -1,0 +1,355 @@
+@media screen and (min-width: 1920px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    background: none;
+  }
+
+  body {
+    background: white;
+    overflow-x: hidden;
+  }
+
+  /* START OF TOP NAV DESIGN */
+
+  .top-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 70%;
+    border-bottom: 0.5px rgb(224, 224, 224) solid;
+    border-width: 80%;
+    background: rgb(29, 29, 29);
+  }
+
+  .top-nav a {
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(170, 170, 170);
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .top-nav p:hover {
+    animation-name: hoveranimation;
+    animation-duration: 1s;
+    color: rgb(71, 71, 71);
+  }
+
+  /* START OF USER-CART DESIGN */
+
+  .user-cart {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    height: 50px;
+    width: 30%;
+    border-bottom: 1px rgb(224, 224, 224) solid;
+    background: rgb(29, 29, 29);
+  }
+
+  .user {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    border-left: 1px rgb(224, 224, 224) solid;
+  }
+
+  .user-a {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(194, 194, 194);
+    font-size: 13px;
+    left: 10%;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  #user-btn:hover {
+    cursor: pointer;
+    color: white;
+  }
+
+  .cart {
+    position: absolute;
+    left: 55%;
+    border-left: 1px rgb(224, 224, 224) solid;
+    height: 100%;
+    width: 45%;
+    top: 0;
+  }
+
+  .user-cart .cart .cart-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: url("/assets/pictures/cart-image3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #cart-image:hover {
+    background: url("/assets/pictures/cart-image2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .cart-a {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(194, 194, 194);
+    font-size: 12.5px;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  /* START OF MENU NAV DESIGN */
+
+  .menu-nav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 70%;
+    height: 100px;
+    border-bottom: 1px rgb(224, 224, 224) solid;
+    background: white;
+    z-index: 1;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0%;
+    width: 30%;
+    z-index: 1;
+  }
+
+  .logo #website-icon {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    height: 75px;
+    width: 75px;
+    transform: translateY(-50%);
+    background: gray;
+    cursor: pointer;
+  }
+
+  .menus {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    left: 10%;
+    width: 90%;
+  }
+
+  .menu-div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 14%;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgb(160, 160, 160);
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  @keyframes hoveranimation {
+    50% {
+      color: white;
+    }
+    100% {
+      color: rgb(71, 71, 71);
+    }
+  }
+
+  .menu-div:hover .menu {
+    top: 70%;
+    animation-name: hoveranimation;
+    animation-duration: 1s;
+    color: rgb(71, 71, 71);
+  }
+
+  /* START OF SEARCH-DIV DESIGN */
+
+  .search-div {
+    position: absolute;
+    top: 50px;
+    height: 100px;
+    left: 65%;
+    width: 50%;
+    border-left: 1px rgb(224, 224, 224) solid;
+    border-bottom: 1px rgb(224, 224, 224) solid;
+    background: white;
+    z-index: 1;
+  }
+
+  #search-bar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+    height: 40px;
+    width: 45%;
+    border: none;
+    outline: none;
+    padding-left: 5%;
+    background: rgb(221, 221, 216);
+    transition: 0.3s;
+  }
+
+  #search-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 55%;
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  #search-bar,
+  #search-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+  }
+
+  #search-bar:hover,
+  #search-bar:focus {
+    background: none;
+    border-bottom: 1px gray solid;
+  }
+
+  #search-btn:hover {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    background: gray;
+    color: white;
+  }
+
+  /* START OF HIDDEN DIVS DESIGN */
+
+  .hidden-divs {
+    position: absolute;
+    top: 150px;
+    height: 400px;
+    left: 0;
+    width: 100%;
+    background: none;
+  }
+
+  .hidden-div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    visibility: hidden;
+    transition: 0.2s;
+    background: rgb(241, 241, 241);
+    z-index: 1;
+  }
+
+  .hd-title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+  }
+
+  .items {
+    position: absolute;
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .items:hover {
+    color: rgb(71, 71, 71);
+  }
+
+  /* START OF MAIN DIV DESIGN */
+
+  .main-div {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: 2800px;
+  }
+
+  .main {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  #main3,
+  #main4 {
+    width: 50%;
+  }
+
+  .main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 105%;
+    max-width: 105%;
+    display: block;
+    transition: 1s;
+  }
+
+  .main:hover .main-image {
+    transform: scale(1.1);
+  }
+
+  #infobar {
+    height: 400px;
+  }
+}
