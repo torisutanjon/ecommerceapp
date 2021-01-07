@@ -6,7 +6,7 @@
   "homepage": "https://torisutanjon.github.io/ecommerceapp/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
+    "predeploy" : "npm run build",
     "deploy": "gh-pages -d build"
   },
   "author": "Tristan John P. Girao",
